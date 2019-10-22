@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="http://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css"
+    />
+    <link
+        rel="icon"
+        href="https://img.icons8.com/nolan/2x/ruby-programming-language.png"
+    />
+    <link rel="stylesheet" href="loading.scss">
+
+    <title>Mai's Portfolio</title>
+  </head>
+
+  <body>
+
+    <div id="load_screen">
+        <div class="loading">Loading</div>
+      <div class="bubble">
+        <span class="shine"></span>
+        <span class="small-shine"></span>
+      </div>
+    </div>
+     
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="navbar-brand brand">Mai</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about.html">About</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            
+          <!-- <li class="nav-item">
+              <button type="button" class="btn btn-outline-primary contact-btn">Resume</button> 
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+     <section class="main-section">
+
+      <div class="container">
+        <p class="hello">Hello, my name is</p>
+        <h1 class="name">Mai Campbell</h1>
+        <h3 class="bio-text">I build things for the web</h3>
+        <p class="intro">
+          I'm aspiring software engineer.<br />
+          I love building things that users loves to use.<br />
+          My goal is to be FullStack Developer because I know<br />
+          how important it is to have a wide knowledge across the stacks..
+        </p>
+
+        <button type="button" class="btn btn-outline-primary">
+          Get In Touch
+        </button>
+      </div>
+    
+    </section> 
+    <section class="about-section">
+ 
+      <div class="container">
+        <div class="row">
+        <div class="col text-section">
+        <h3 class="about">About Me</h3>
+        <p class="bio">
+          Hello, I'm Mai, Coding is one of my passion.  
+          There are
+          no limits to what you can do when it comes to programming.
+          My interested in videos games and curiosity about how they're
+          built is what lead me to software development.
+        </p>
+        <p class="bio travel">
+          Travel is another one of my passion. While traveling
+          I gain a lot of critical thinking and problem-solving skill 
+          I enjoy to be continuously learning and to keep up 
+          with the latest trend in tech.
+        </p>
+
+        <p> Here are a few technologies that I'm interested in learning. </p>
+        <!-- <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>React-Native</li>
+          <li>GraphQL</li>
+          <li>Node JS</li>
+          
+        </ul> -->
+      </div>
+      <div class="col">
+          <img class="profile-img" src="assets/Mai.jpeg" alt="profile-img" />
+        </div>
+      </div>
+      </div>
+
+    </section> 
+
+ <section id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-secondary m-4">Projects</h2>
+      <div id=projects class="row justify-content-center">
+
+          <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+          <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Calculator</h6>
+                <p class="card-text">Calculator with pure vanilla JavaScript</p>
+                
+                <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                <p class="technologies">HTML CSS JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
+                    <p class="card-text">Future project coming soon</p>
+                    <p class="card-text"><!--technologies used goes here--></p>
+                    <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                    <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                  </div>
+                </div>
+              </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
+                    <p class="card-text">Future project coming soon</p>
+                    <p class="card-text"><!--technologies used goes here--></p>
+                    <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                    <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+                  <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
+                        <p class="card-text">Future project coming soon</p>
+                        <p class="card-text"><!--technologies used goes here--></p>
+                        <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                        <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
+                            <p class="card-text">Future project coming soon</p>
+                            <p class="card-text"><!--technologies used goes here--></p>
+                            <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                            <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-12 card d-flex justify-content-center border-0 p-3 m-4">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-body">
+                                <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-muted"> <!--Title project goes here --> </h6>
+                                <p class="card-text">Future project coming soon</p>
+                                <p class="card-text"></p>
+                                <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
+                                <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                              </div>
+                            </div>
+                          </div>
+      </div>
+    </div> 
+ </section>
+
+
+    <footer class="footer-bottom">
+      <nav class="navbar navbar-expand d-flex justify-content-center bg-light">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/PA55ION"><i class="mdi mdi-github-circle"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="mdi mdi-facebook-box"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="mdi mdi-linkedin-box"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="mdi mdi-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="mdi mdi-twitter-circle"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="text-center bg-light">
+          Made with <i class="mdi mdi-heart" aria-hidden="true"></i> by Mai
+        </footer>    
+    </footer>
+    
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

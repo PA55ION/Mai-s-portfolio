@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+
+:root {
+    --size: 12vmin;
+    --loader_w: calc(var(--size) * 6);
+	--loader_h: calc(var(--size) * 2.3);
+	--bubble: calc(var(--size) * 1.5);
+	--shine: calc(var(--size) / 5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+   
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100%;
+    min-height: 100%; */
+}
+
+/* loading screen style */
+
+#load_screen {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.bubble {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
+    animation: blow 1.6s linear alternate infinite;
+    transform: scale(0.5) translateY(50%);
+    outline: 1px solid transparent;
+    position:absolute;
+    left: 53%;
+    right:30%;
+    top: 35%;
+    bottom:25%;
+
+  }
+
+  .shine {
+      width: 15px;
+      height: 5px;
+      background: white;
+      border: 2px;
+      position: absolute;
+      border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      transform: rotateZ(130deg);
+      top: 11%;
+      left: 12%;
+      -webkit-transform: rotateZ(130deg);
+      -moz-transform: rotateZ(130deg);
+      -ms-transform: rotateZ(130deg);
+      -o-transform: rotateZ(130deg);
+      -webkit-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -moz-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -ms-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -o-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+}
+
+.small-shine {
+    width: 5px;
+    height: 5px;
+    background: white;
+    border: 2px;
+    position: absolute;
+    border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    transform: rotateZ(130deg);
+    top: 32%;
+    left: 9%    ;
+    -webkit-transform: rotateZ(130deg);
+    -moz-transform: rotateZ(130deg);
+    -ms-transform: rotateZ(130deg);
+    -o-transform: rotateZ(130deg);
+    -webkit-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -moz-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -ms-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -o-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+
+}
+  
+  .loading {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    color: #ff1ead;
+    text-transform: uppercase;
+    position: fixed;
+    left: 55%;
+    top: 55%;
+    background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+  
+  @keyframes blow {
+      0% {
+          transform: scale(0.5) translateY(50%);
+      }
+      20% {
+          transform: scale(0.6) translateY(33%);
+      }
+      40% {
+          transform: scale(0.7) translateY(21%);
+      }
+      60% {
+          transform: scale(0.8) translateY(12%);
+      }
+      80% {
+          transform: scale(0.9) translateY(5%);
+      }
+      93%, 100% {
+          transform: scale(1) translateY(0) translateZ(0);
+      }
+  }  
+/*end of loader section */
+
+.section { 
+    height: 100vh; 
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(33,36,50); */
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 50% 50%; 
+ } 
+
+ canvas {
+    display: block;
+}
+
+.main-section {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.hello {
+    font-size: 16px;
+  
+}
+
+h1 {
+    font-size: 10vw;
+    line-height: 88px;
+    font-family: 'Montserrat', cursive;
+    color: #05284b;
+}
+
+.name {
+    font-size: 80px;
+    line-height: 88px;
+    font-family: 'Montserrat', cursive;
+}
+
+.bio-text {
+    font-size: 65px;
+    line-height: 88px;
+    font-family: 'Montserrat', cursive;
+    color: #27556d;
+}
+
+.intro {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Montserrat', cursive;
+    margin-bottom: 75px;
+}
+
+.contact-btn {
+    margin-bottom: 100px;
+}
+
+.about {
+    margin-top: 55px;
+    margin-bottom: 75px;
+    padding-top: 100px;
+}
+
+.about-section {
+    min-height: 100vh;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    
+}
+
+.bio {
+    font-size: 20px;
+    line-height: 32px;
+   
+}
+
+.navbar-brand {
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    vertical-align: center;
+    margin-left: 100px;
+}
+
+.btn {
+    margin-top: 100x;
+}
+
+h3, p {
+   font-family: 'Montserrat', cursive;
+}
+
+
+button {
+    font-family: 'Montserrat', cursive;
+}
+
+.mdi {
+    font-size: 34px;
+}
+
+.mdi-heart {
+    font-size: 16px;
+    color: red;
+
+}
+
+.footer-text {
+    font-family: 'Sacramento', cursive;
+    margin-top: 125px;
+}
+
+@media only screen
+and (min-device-width : 360px)
+and (min-device-width : 480px) {
+
+    .name {
+        font-size: 10vw;
+    }
+    .bio-text {
+        font-size: 8vw;
+    }
+    .intro {
+        font-size: 18px;
+    }
+    
+    .about {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+ 
+  
+    .bio {
+        font-size: 18px;
+    }
+ 
+    .bubble {
+        top: 49%;
+        left: 73%;
+        background: #12c2e9;
+       
+    }
+
+    .profile-img {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        margin-left: 40px;
+    }
+}
+
+
+@media (min-width: 576px) { 
+    .name {
+        font-size: 9vw;
+    }
+    .bio-text {
+        font-size: 7vw;
+    }
+    .intro {
+        font-size: 17px;
+    }
+    .bio {
+        font-size: 19px;
+        width: 480px;
+    }
+    .loading {
+        margin-left: -100px;
+    }
+
+    .profile-img {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        margin-left: 120px;
+}
+    .bubble {
+        top: 49%;
+        left: 61.5%;
+        background: salmon;
+
+}
+}
+
+
+
+@media (min-width: 768px) {
+    body{
+        width: 100%;
+    }
+    .name {
+        font-size: 8vw;
+    }
+    .bio-text {
+        font-size: 46px;
+    }
+    .intro {
+        font-size: 18px;
+    }
+    .bio {
+        font-size: 20px;
+        width: 480px;
+
+    }
+    .profile-img {
+        margin-top: 50px;
+        margin-left: 170px;
+    }
+    
+    .bubble {
+        position: absolute;
+        top: 48.9%;
+        left: 58.5%;
+        background: gold;
+        
+}
+}
+
+
+@media (min-width: 992px) {
+    .name {
+        font-size: 6vw;
+    }
+    .bio-text {
+        font-size: 5vw;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .bio{
+        font-size: 20px;
+        width: 420px;
+    }
+    .bubble {
+        top: 47.5%;
+        left: 54.5%;
+        background: #05284b
+    }
+
+    .profile-img {
+        margin-top: 200px;
+        /* margin-right: 15px; */
+        margin-right: 10px;
+        
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .name {
+        font-size: 6vw;
+    }
+    .bio-text {
+        font-size: 4vw;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .bio {
+        font-size: 20px;
+    }
+    .bubble {
+        left: 50%;
+    }
+    .profile-img {
+        margin-top: 250px;
+    }
+}
+
+.portfolio {
+    height: 100vh;
+}
+
+
+/*project.html */
+
+.navbar-item {
+    background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.technologies {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+
+
