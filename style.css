@@ -10,10 +10,6 @@
 	--shine: calc(var(--size) / 5);
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body::-webkit-scrollbar {
     width: .5em;
    
@@ -37,6 +33,7 @@ body::-webkit-scrollbar-thumb {
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* width: 100%;
     min-height: 100%; */
 }
@@ -167,7 +164,7 @@ body {
 }
 
 .main-section {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 
@@ -268,6 +265,11 @@ button {
 
 }
 
+.btn-outline-primary :hover {
+    color: blue;
+    cursor: pointer;
+}
+
 .footer-text {
     font-family: 'Sacramento', cursive;
     margin-top: 125px;
@@ -278,7 +280,7 @@ and (min-device-width : 360px)
 and (min-device-width : 480px) {
 
     .name {
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .bio-text {
         font-size: 8vw;
@@ -307,16 +309,89 @@ and (min-device-width : 480px) {
         width: 100%;
       
     }
+    /* .profile-img {
+        margin-bottom: 150px;
+        margin-left: 190px;
+    } */
+}
+
+@media (max-width: 23.5em) {
+    .name {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .bio-text {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .intro {
+        font-size: 18px;
+    }
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        margin-left: 65px;
+        
+    }
+   
+}
+
+@media (max-width: 30em) {
+    .name {
+        font-size: 50px;
+        margin-bottom: -10px;
+    }
+    .bio-text {
+        font-size: 50px;
+    }
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 70px;
+        margin-left: 65px;
+        margin-bottom: 80px;
+    }
+    .about {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+    
+} 
+
+@media (max-width: 48em) {
+    .name {
+        font-size: 60px;
+        margin-bottom: -10px;
+    }
+    .bio-text {
+        font-size: 60px
+    }
+    .intro {
+        font-size: 20px;
+    }
+} 
+
+@media (min-width: 320px) {
+    .name {
+        font-size: 10vw;
+    }
+    .bio-text {
+        font-size: 10vw;
+        line-height: 60px;
+    }
 
     .profile-img {
-        margin-top: 50px;
-        margin-bottom: 150px;
         margin-left: 40px;
     }
 }
 
-
-@media (min-width: 576px) { 
+@media (min-width: 600px) { 
     .name {
         font-size: 9vw;
     }
@@ -380,7 +455,6 @@ and (min-device-width : 480px) {
         
 }
 }
-
 
 @media (min-width: 992px) {
     .name {
