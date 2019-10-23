@@ -54,7 +54,7 @@ body {
 
 .bubble {
     width: 3em;
-    height: 3em;
+   height: 3em;
     border-radius: 50%;
     border: 2px solid black;
     background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
@@ -116,15 +116,13 @@ body {
     color: #ff1ead;
     text-transform: uppercase;
     position: fixed;
-    left: 55%;
-    top: 55%;
+    left: 45%;
+    top: 50%;
     background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    
+
 }
   
   @keyframes blow {
@@ -294,16 +292,20 @@ and (min-device-width : 480px) {
         font-size: 24px;
     }
  
-  
     .bio {
         font-size: 18px;
     }
  
     .bubble {
-        top: 49%;
-        left: 73%;
+        top: 47.7%;
+        left: 73.1%;
         background: #12c2e9;
        
+    }
+
+    .loading {
+        width: 100%;
+      
     }
 
     .profile-img {
@@ -338,8 +340,8 @@ and (min-device-width : 480px) {
         margin-left: 120px;
 }
     .bubble {
-        top: 49%;
-        left: 61.5%;
+        top: 47.5%;
+        left: 51%;
         background: salmon;
 
 }
@@ -372,8 +374,8 @@ and (min-device-width : 480px) {
     
     .bubble {
         position: absolute;
-        top: 48.9%;
-        left: 58.5%;
+        top: 47.6%;
+        left: 49.7%;
         background: gold;
         
 }
@@ -395,8 +397,8 @@ and (min-device-width : 480px) {
         width: 420px;
     }
     .bubble {
-        top: 47.5%;
-        left: 54.5%;
+        top: 46.5%;
+        left:48.9%;
         background: #05284b
     }
 
@@ -423,7 +425,9 @@ and (min-device-width : 480px) {
         font-size: 20px;
     }
     .bubble {
-        left: 50%;
+        left: 48%;
+        top: 48%;
+        background: #f64f59;
     }
     .profile-img {
         margin-top: 250px;
