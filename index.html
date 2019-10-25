@@ -14,23 +14,12 @@
         crossorigin="anonymous"
     />
     <link
-        rel="stylesheet"
-        href="http://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css"
-    />
-    <link rel="stylesheet" href="CSS/material-icons.css">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <link
         rel="icon"
         href="https://img.icons8.com/nolan/2x/ruby-programming-language.png"
     />
-
     <title>Mai's Portfolio</title>
   </head>
-
   <body>
-
     <div id="load_screen">
         <div class="loading">Loading</div>
       <div class="bubble">
@@ -40,7 +29,7 @@
     </div>
      
     <div id="particles-js"></div>
-    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
       <div class="container">
         <a href="index.html" class="navbar-brand brand">Mai</a>
         <button
@@ -80,7 +69,6 @@
     </nav> 
 
      <section class="main-section">
-
       <div class="container">
         <p class="hello">Hello, my name is</p>
         <h1 class="name">Mai Campbell</h1>
@@ -100,12 +88,12 @@
 
     
     </section> 
-    <section class="about-section">
+    <section class="about-section" id="about">
  
       <div class="container">
         <div class="row">
         <div class="col text-section">
-        <h3 class="about" id="about">About Me</h3>
+        <h3 class="about">About Me</h3>
         <p class="bio">
           Hello, I'm Mai, Coding is one of my passion.  
           There are
@@ -139,83 +127,192 @@
 
     </section> 
 
- <section id="portfolio">
+ <section class="projects-section" id="projects">
     <div class="container">
-      <h2 class="text-center" id="projects">Projects</h2>
+      <h2 class="text-center project" style="font-family: Montserrat, san-serif";>Projects</h2>
       <div class="row justify-content-center">
 
           <div class="col-lg-4 col-md-6 col-sm-10 p-3">
-          <div class="card justify-content-center" style="height: 18rem;">
+          <div class="card" style="height: 18rem;">
               <div class="card-body">
-                <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                <h5 class="card-title">
+                  <span 
+                    class="iconify file-icon" 
+                    data-icon="fa-regular:file-code" 
+                    data-inline="false">
+                  </span>
+                </h5>
                 <h6 class="card-subtitle mb-2 text-muted">Calculator</h6>
                 <p class="card-text">Calculator with pure vanilla JavaScript</p>
                 
-                <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                <a href="https://pa55ion.github.io/calculator/" target="_blank"class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                <a href="#" class="card-link">
+                    <span 
+                      class="iconify github-icon" 
+                      data-icon="fa-brands:github" 
+                      data-inline="false"
+                      >
+                    </span>
+                  </a>
+                <a href="https://pa55ion.github.io/calculator/" target="_blank"class="card-link">
+                  <span 
+                    class="iconify new-window-icon" 
+                    data-icon="ic:baseline-open-in-new" 
+                    data-inline="false">
+                  </span>
+                </a>
                 <p class="technologies">HTML CSS JavaScript</p>
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-3 col-sm-4 col-xs-12 card d-flex justify-content-center border-0 p-4 m-4"> -->
               <div class="col-lg-4 col-md-6 col-sm-10 p-3">
               <div class="card" style="height: 18rem;">
                   <div class="card-body">
-                    <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
-                    <p class="card-text">Future project coming soon</p>
-                    <p class="card-text"><!--technologies used goes here--></p>
-                    <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                    <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                    <h5 class="card-title">
+                        <span 
+                        class="iconify file-icon" 
+                        data-icon="fa-regular:file-code" 
+                        data-inline="false">
+                      </span>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> Project name</h6>
+                    <p class="card-text">Project description BHHBJKNOKMN</p>
+                    <a href="#" class="card-link">
+                        <span 
+                          class="iconify github-icon" 
+                          data-icon="fa-brands:github" 
+                          data-inline="false"
+                        >
+                    </span>
+                      </span>
+                    </a>
+                    <a href="#" class="card-link">
+                        <span 
+                        class="iconify new-window-icon" 
+                        data-icon="ic:baseline-open-in-new" 
+                        data-inline="false">
+                      </span>
+                    </a>
+                    <p class="technologies">HTML CSS JavaScript</p>
                   </div>
                 </div>
               </div>
-          <!-- <div class="col-lg-3 col-sm-4 col-xs-12 card d-flex justify-content-center border-0 p-4 m-4"> -->
               <div class="col-lg-4 col-md-6 col-sm-10 p-3">
               <div class="card" style="height: 18rem;">
                   <div class="card-body">
-                    <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                    <h5 class="card-title">
+                        <span 
+                        class="iconify file-icon" 
+                        data-icon="fa-regular:file-code" 
+                        data-inline="false">
+                        </span>
+                    </h5>
                     <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
                     <p class="card-text">Future project coming soon</p>
                     <p class="card-text"><!--technologies used goes here--></p>
-                    <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                    <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                    <a href="#" class="card-link">
+                        <span 
+                          class="iconify github-icon" 
+                          data-icon="fa-brands:github" 
+                          data-inline="false">
+                        </span>
+                    </a>
+                    <a href="#" class="card-link">
+                        <span 
+                        class="iconify new-window-icon" 
+                        data-icon="ic:baseline-open-in-new" 
+                        data-inline="false">
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-10 p-3">
                   <div class="card" style="height: 18rem;">
                       <div class="card-body">
-                        <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                        <h5 class="card-title">
+                            <span 
+                              class="iconify file-icon" 
+                              data-icon="fa-regular:file-code" 
+                              data-inline="false">
+                            </span>
+                        </h5>
                         <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
                         <p class="card-text">Future project coming soon</p>
                         <p class="card-text"><!--technologies used goes here--></p>
-                        <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                        <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                        <a href="#" class="card-link">
+                            <span 
+                          class="iconify github-icon" 
+                          data-icon="fa-brands:github" 
+                          data-inline="false">
+                        </span>
+                        </a>
+                        <a href="#" class="card-link">
+                            <span 
+                            class="iconify new-window-icon" 
+                            data-icon="ic:baseline-open-in-new" 
+                            data-inline="false">
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 col-sm-10 p-3">
                       <div class="card" style="height: 18rem;">
                           <div class="card-body">
-                            <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                            <h5 class="card-title">
+                                <span 
+                                class="iconify file-icon" 
+                                data-icon="fa-regular:file-code" 
+                                data-inline="false">
+                              </span>
+                            </h5>
                             <h6 class="card-subtitle mb-2 text-muted"><!--Title project goes here --> </h6>
                             <p class="card-text">Future project coming soon</p>
                             <p class="card-text"><!--technologies used goes here--></p>
-                            <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                            <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                            <a href="#" class="card-link">
+                                <span 
+                                  class="iconify github-icon" 
+                                  data-icon="fa-brands:github" 
+                                  data-inline="false">
+                                </span>
+                            </a>
+                            <a href="#" class="card-link">
+                                <span 
+                                class="iconify new-window-icon" 
+                                data-icon="ic:baseline-open-in-new" 
+                                data-inline="false">
+                              </span>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-10 p-3">
                           <div class="card" style="height: 18rem;">
                               <div class="card-body">
-                                <h5 class="card-title"><i class="mdi mdi-file-code-outline"></i></h5>
+                                <h5 class="card-title">
+                                    <span 
+                                    class="iconify file-icon" 
+                                    data-icon="fa-regular:file-code" 
+                                    data-inline="false">
+                                  </span>
+                                </h5>
                                 <h6 class="card-subtitle mb-2 text-muted"> <!--Title project goes here --> </h6>
                                 <p class="card-text">Future project coming soon</p>
                                 <p class="card-text"></p>
-                                <a href="#" class="card-link"><i class="mdi mdi-github-circle" style="color:black; font-size: 24px;"></i></a>
-                                <a href="#" class="card-link"><i class="mdi mdi-open-in-new" style="color:black; font-size: 24px;"></i></a>
+                                <a href="#" class="card-link">
+                                  <span 
+                                    class="iconify github-icon" 
+                                    data-icon="fa-brands:github" 
+                                    data-inline="false">
+                                  </span>
+                                </a>
+                                <a href="#" class="card-link">
+                                    <span 
+                                    class="iconify new-window-icon" 
+                                    data-icon="ic:baseline-open-in-new" 
+                                    data-inline="false">
+                                  </span>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -225,34 +322,50 @@
 
 
     <footer class="footer-bottom">
-      <nav class="navbar navbar-expand d-flex justify-content-center bg-light">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center bg-dark navbar-dark">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/PA55ION"><i class="mdi mdi-github-circle"></i></a>
+            <a class="nav-link" href="https://github.com/PA55ION">
+              <span 
+                class="iconify social-icon" 
+                data-icon="mdi:github-box" 
+                data-inline="false">
+              </span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="mdi mdi-facebook-box"></i></a>
+            <a class="nav-link" href="#">
+                <span class="iconify social-icon" data-icon="mdi:facebook-box" data-inline="false"></span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="mdi mdi-linkedin-box"></i></a>
+            <a class="nav-link" href="#">
+              <span 
+                class="iconify social-icon" 
+                data-icon="ant-design:linkedin-fill" 
+                data-inline="false"></span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="mdi mdi-instagram"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="mdi mdi-twitter-circle"></i></a>
+            <a class="nav-link" href="#">
+                <span class="iconify social-icon" 
+                data-icon="fa-brands:instagram" 
+                data-inline="false">
+              </span>
+            </a>
           </li>
         </ul>
-        <!-- <footer class="text-center bg-light"> -->
-           
-          <!-- </footer>     -->
       </nav>
-      <p class="text-center" style="font-family: 'Major Mono Display', cursive;
-      "font-size: 14px;">MAde WitH <span class="iconify" data-icon="fa:heart"></span> by MAi</p>
+          <p 
+          class="text-center bg-dark text-light" 
+          style="font-family: 'Major Mono Display', cursive;
+          font-size: 12px;" >
+          MAde WitH <span class="iconify heart" data-icon="fa:heart"></span> by MAi</p>
+
+
+      
       
     </footer>
-   
-    
     <script type="text/javascript" src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="particles.js"></script>

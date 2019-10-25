@@ -214,7 +214,7 @@ h1 {
 .about-section {
     min-height: 100vh;
     margin-top: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     background: #12c2e9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -228,12 +228,6 @@ h1 {
    
 }
 
-
-
-#portfolio{
-    margin-bottom: 200px;
-
-}
 
 .navbar-brand {
     font-family: 'Major Mono Display', cursive;
@@ -269,35 +263,27 @@ button {
     font-family: 'Montserrat', cursive;
 }
 
-md-icon{
-    font-family: 'Material Icons' !important;
-  }
-  
+/* .iconify:hover{
+    color: blue;
+} */
 
-.mdi {
-    font-size: 34px;
-}
-
-.material-icons {
-    text-rendering: optimizeLegibility;
-
-}
-
-.iconify {
-    font-size: 16px;
+.heart {
     color: red;
+    font-size: 14px;
+}
 
+.social-icon{
+    font-size: 40px;
+}
+
+.social-icon :hover {
+    cursor: pointer;
+    color: black;
 }
 
 .btn-outline-primary :hover {
     color: blue;
     cursor: pointer;
-}
-
-.footer-text {
-    font-family: 'Major Mono Display', cursive;
-    font-size: 14px;
-    margin-top: 125px;
 }
 
 @media only screen
@@ -466,13 +452,18 @@ and (min-device-width : 480px) {
         margin-top: 50px;
         margin-bottom: 150px;
         margin-left: 120px;
-}
+    }
     .bubble {
         top: 47.5%;
         left: 51%;
         background: salmon;
-
-}
+    }
+    .social-icon {
+        font-size: 6vw;
+    }
+    .project {
+        font-size: 7vw;
+    }
 }
 
 
@@ -499,6 +490,9 @@ and (min-device-width : 480px) {
         margin-top: 50px;
         margin-left: 170px;
     }
+    .social-icon {
+        font-size: 5vw;
+    }
     
     /* .bubble {
         top: 28%;
@@ -510,6 +504,9 @@ and (min-device-width : 480px) {
         top: 30%;
         left: 45%;
     } */
+    .project {
+        font-size: 5vw;
+    }
 }
 
 @media (min-width: 992px) {
@@ -538,11 +535,17 @@ and (min-device-width : 480px) {
         margin-right: 10px;
         
     }
+    .social-icon {
+        font-size: 4vw;
+    }
+    .project {
+        font-size: 5vw;
+    }
 }
 
 
 @media (min-width: 1200px) {
-    .name {
+    .name{
         font-size: 6vw;
     }
     .bio-text {
@@ -562,6 +565,12 @@ and (min-device-width : 480px) {
     .profile-img {
         margin-top: 250px;
     }
+    .social-icon {
+        font-size: 3vw;
+    }
+    .project {
+        font-size: 5vw;
+    }
 }
 
 .portfolio {
@@ -569,7 +578,28 @@ and (min-device-width : 480px) {
 }
 
 
-/*project.html */
+/*projects section*/
+.projects-section{
+    min-height: 100vh;
+    /* margin-top: 100px; */
+}
+
+.project {
+    font-size: 65px;
+    padding-top: 75px;
+    margin-bottom: 70px;
+}
+
+.file-icon {
+    font-size: 40px;
+    margin-top: 20px;
+  
+}
+.github-icon, .new-window-icon {
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+}
+
 
 .navbar-item {
     background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
@@ -579,8 +609,16 @@ and (min-device-width : 480px) {
 
 .technologies {
     font-size: 12px;
-    margin-top: 25px;
+    
+   
 }
+
+/* .footer-bottom {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 300px;
+} */
 
 
 
