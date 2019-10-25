@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 :root {
     --size: 12vmin;
@@ -116,7 +117,7 @@ body {
     left: 45%;
     top: 50%;
     background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
 
@@ -227,11 +228,24 @@ h1 {
    
 }
 
-.navbar-brand {
-    font-family: 'Sacramento', cursive;
-    font-weight: bold;
+
+
+#portfolio{
+    margin-bottom: 200px;
+
 }
 
+.navbar-brand {
+    font-family: 'Major Mono Display', cursive;
+    font-weight: bold;
+   
+}
+
+.nav-item {
+    font-family: 'Major Mono Display', cursive;
+    font-weight: bold;
+
+}
 .profile-img {
     border-radius: 50%;
     margin-top: 200px;
@@ -255,9 +269,58 @@ button {
     font-family: 'Montserrat', cursive;
 }
 
+md-icon{
+    font-family: 'Material Icons' !important;
+  }
+  
+
 .mdi {
     font-size: 34px;
 }
+
+.material-icons {
+    text-rendering: optimizeLegibility;
+
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format('woff'),
+         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 
 .mdi-heart {
     font-size: 16px;
@@ -271,7 +334,8 @@ button {
 }
 
 .footer-text {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Major Mono Display', cursive;
+    font-size: 14px;
     margin-top: 125px;
 }
 
@@ -296,6 +360,7 @@ and (min-device-width : 480px) {
  
     .bio {
         font-size: 18px;
+        width: 400px;
     }
  
     .bubble {
@@ -309,10 +374,11 @@ and (min-device-width : 480px) {
         width: 100%;
       
     }
-    /* .profile-img {
-        margin-bottom: 150px;
-        margin-left: 190px;
-    } */
+    .profile-img {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 80px;
+    }
 }
 
 @media (max-width: 23.5em) {
