@@ -117,7 +117,7 @@ body {
     left: 45%;
     top: 50%;
     background: -webkit-linear-gradient(#22E1FF, #1D8FE1);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 
@@ -283,45 +283,6 @@ md-icon{
 
 }
 
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-         local('MaterialIcons-Regular'),
-         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format('woff'),
-         url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
-  }
-
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
-
 .mdi-heart {
     font-size: 16px;
     color: red;
@@ -365,8 +326,6 @@ and (min-device-width : 480px) {
  
     .bubble {
         top: 47.7%;
-        left: 73.1%;
-        background: #12c2e9;
        
     }
 
@@ -399,9 +358,17 @@ and (min-device-width : 480px) {
         margin-top: 30px;
         margin-bottom: 100px;
         margin-left: 65px;
-        
     }
-   
+    
+    /* .loading {
+        font-size: 40px;
+        position: absolute;
+        left: 60px;
+    }
+    .bubble {
+        top: 36%;
+        background:  red;
+    } */
 }
 
 @media (max-width: 30em) {
@@ -427,7 +394,18 @@ and (min-device-width : 480px) {
     .bio {
         font-size: 18px;
     }
-    
+    /* .loading {
+        font-size: 50px;
+        position: absolute;
+        left: 80px;
+        top: 45%;
+    }
+    .bubble {
+        left: 54%;
+        top: 50px;
+        background: yellow;
+    }
+     */
 } 
 
 @media (max-width: 48em) {
@@ -454,6 +432,15 @@ and (min-device-width : 480px) {
 
     .profile-img {
         margin-left: 40px;
+    }
+    .loading {
+        font-size: 50px;
+        position: absolute;
+        left: 80px;
+    }
+    .bubble {
+        top: 48%;
+        left: 54%;
     }
 }
 
@@ -513,13 +500,16 @@ and (min-device-width : 480px) {
         margin-left: 170px;
     }
     
-    .bubble {
-        position: absolute;
-        top: 47.6%;
-        left: 49.7%;
+    /* .bubble {
+        top: 28%;
+        left: 50.7%;
         background: gold;
         
-}
+    }
+    .loading {
+        top: 30%;
+        left: 45%;
+    } */
 }
 
 @media (min-width: 992px) {
