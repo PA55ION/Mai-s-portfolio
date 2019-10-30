@@ -228,7 +228,7 @@ h1 {
 .navbar-brand {
     font-family: 'Major Mono Display', cursive;
     font-weight: bold;
-    background:  -webkit-linear-gradient(#12c2e9, #c471ed, #f64f59);
+    background:   -webkit-linear-gradient(#e0eafc, #cfdef3); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
