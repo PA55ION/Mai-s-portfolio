@@ -6,5 +6,11 @@
     },
     "files.autoSave": "afterDelay",
     "git.ignoreLimitWarning": true,
-    "liveServer.settings.port": 5500
+    "liveServer.settings.port": 5500,
+    "cSpell.words": [
+        "crossorigin",
+        "iconify",
+        "linkedin",
+        "scrollbar"
+    ]
 }
