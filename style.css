@@ -411,7 +411,6 @@ and (min-device-width : 480px){
     .bubble {
         top: 40%;
         left: 51.4%;
-
     }
 }
 
@@ -567,11 +566,14 @@ and (min-device-width : 480px){
     .bio {
         font-size: 20px;
     }
-    /* .bubble {
+    .bubble {
         left: 48%;
         top: 48%;
-        background: #f64f59;
-    } */
+    }
+    .loading {
+        top: 50%;
+        left: 45%;
+    }
     .profile-img {
         margin-top: 250px;
     }
@@ -625,6 +627,10 @@ and (min-device-width : 480px){
     padding: 0;
     height: 100vh;
     width: 100vw;
+}
+
+.connect-text {
+    margin-top: 150px;
 }
 
 .point-up {
