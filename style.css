@@ -37,6 +37,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* loading screen style */
@@ -228,7 +229,7 @@ h1 {
 .navbar-brand {
     font-family: 'Major Mono Display', cursive;
     font-weight: bold;
-    background:   -webkit-linear-gradient(#e0eafc, #cfdef3); 
+    background: -webkit-linear-gradient(#e0eafc, #cfdef3); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -236,7 +237,8 @@ h1 {
 .nav-item {
     font-family: 'Major Mono Display', cursive;
     font-weight: bold;
-    background: -webkit-linear-gradient(#c6ffdd, #fbd786, #f7797d);
+    background: -webkit-linear-gradient(#e0eafc, #cfdef3); 
+    /* background: -webkit-linear-gradient(#c6ffdd, #fbd786, #f7797d); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -302,8 +304,9 @@ and (min-device-width : 480px){
         margin-left: 80px;
     }
     .lead {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
+        color: blue;
     }
 }
 
@@ -464,6 +467,10 @@ and (min-device-width : 480px){
         top: 30%;
         left: 38%;
     }
+    .lead {
+        color: red;
+        font-size: 18px;
+    }
 }
 
 
@@ -502,6 +509,10 @@ and (min-device-width : 480px){
     .project {
         font-size: 5vw;
     }
+    .lead {
+        color: purple;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -520,7 +531,6 @@ and (min-device-width : 480px){
     }
     .bubble {
         top: 42.8%;
-
     
     }
     .loading {
@@ -539,6 +549,9 @@ and (min-device-width : 480px){
     }
     .project {
         font-size: 5vw;
+    }
+    .lead {
+        color: gold;
     }
 }
 
