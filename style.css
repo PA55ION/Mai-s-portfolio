@@ -287,6 +287,10 @@ and (min-device-width : 480px){
         margin-bottom: 80px;
         margin-left: 80px;
     }
+    .connect-description {
+        font-size: 18px;
+        width: 5000px;
+    }
   
 }
 
@@ -464,6 +468,9 @@ and (min-device-width : 480px){
         top: 30%;
         left: 38%;
     }
+    .connect-description {
+        width: 560px;
+    }
 }
 
 
@@ -509,6 +516,7 @@ and (min-device-width : 480px){
     .project {
         font-size: 5vw;
     }
+
 
 }
 
@@ -605,6 +613,7 @@ and (min-device-width : 480px){
         width: 580px;
         font-size: 18px;
         text-align: center;
+
     }
 }
 
@@ -659,9 +668,9 @@ and (min-device-width : 480px){
 
 .connect-description {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 2;
     margin-bottom: 50px;
-    visibility: visible;
+    
     
 }
 
