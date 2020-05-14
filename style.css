@@ -60,8 +60,8 @@ html, body {
     transform: scale(0.5) translateY(50%);
     outline: 1px solid transparent;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48.5%;
+    left: 48.5%;
 }
 
   .shine {
@@ -107,7 +107,7 @@ html, body {
   
   .loading {
     font-family: 'Major Mono Display', monospace;
-    font-size: 55px;
+    font-size: 50px;
     margin-left: -150px;
     background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
     -webkit-background-clip: text;
@@ -313,17 +313,6 @@ and (min-device-width : 480px){
         margin-bottom: 100px;
         margin-left: 65px;
     }
-    .loading {
-        font-size: 40px;
-        left: 228px;
-        top: 50%;
-        
-    } 
-    .bubble {
-        top: 35.5%;
-        width: 40px;
-        height: 40px;
-    } 
 }
 
 @media (max-width: 30em) {
@@ -345,15 +334,6 @@ and (min-device-width : 480px){
 
     .bio {
         font-size: 18px;
-    }
-    .loading {
-        font-size: 50px;
-        left: 460px;
-        top: 50%;
-    }
-    .bubble {
-        left: 54%;
-        top: 50px;
     }
     .connect-description {
         font-size: 16px;
@@ -399,40 +379,14 @@ and (min-device-width : 480px){
     .profile-img {
         margin-left: 40px;
     }
-    .loading {
-        font-size: 45px;
-        left: 218px;
-        top: 48%;
-    } 
-    .bubble {
-        top: 45.3%;
-        left: 54.9%;
-    } 
+
 }
 @media (min-width: 411px) {
-    .loading {
-        top: 43%;
-        left: 57%;
-    }
-    .bubble {
-        top: 40%;
-        left: 51.4%;
-    }
     .connect-text {
         margin-top: 250px;
     }
 }
 
-@media (min-width: 375px) {
-    .loading {
-        top: 37%;
-        left: 57.8%;
-    }
-    .bubble {
-        top: 35%;
-        left: 52.4%; 
-    }
-}
 
 @media (min-width: 600px) { 
     .name {
@@ -447,27 +401,18 @@ and (min-device-width : 480px){
     .intro {
         font-size: 17px;
     }
-    .loading {
-        margin-left: -100px;
-    }
+
     .profile-img {
       margin-left: 140px;
         
     }
-    .bubble {
-        top: 28.5%;
-        left: 45.7%;
-    } 
     .social-icon {
         font-size: 6vw;
     }
     .project {
         font-size: 7vw;
     }
-    .loading {
-        top: 30%;
-        left: 38%;
-    }
+    
     .connect-description {
         width: 560px;
     }
@@ -503,16 +448,7 @@ and (min-device-width : 480px){
     .social-icon {
         font-size: 5vw;
     }
-    .bubble {
-        top: 28%;
-        left: 43.3%;
-        
-    }
-    .loading {
-        font-size: 45px;
-        top: 50%;
-        left: 40%;
-    } 
+
     .project {
         font-size: 5vw;
     }
@@ -538,14 +474,10 @@ and (min-device-width : 480px){
         margin-left: 40px;
     }
     .bubble {
-        top: 42.8%;
+        top: 47.8%;
+        left: 49.3%;
     
     }
-    .loading {
-        top: 48%;
-        left: 47%;
-    }
-
     .social-icon {
         font-size: 4vw;
     }
@@ -555,13 +487,6 @@ and (min-device-width : 480px){
 }
 
 @media (min-width: 1024px) {
-    .loading {
-        font-size: 50px;
-    }
-    .bubble {
-        left: 31.2%;
-    }
-
     .connect-text {
         font-size: 40px;
     }
@@ -590,14 +515,6 @@ and (min-device-width : 480px){
     }
     .bio {
         font-size: 20px;
-    }
-    .bubble {
-        left: 48%;
-        top: 48%;
-    }
-    .loading {
-        top: 50%;
-        left: 45%;
     }
     .profile-img {
         margin-top: 250px;
@@ -721,4 +638,54 @@ and (min-device-width : 480px){
       transform: translateY(0);
     }
   }
+
+  button {
+    position: relative;
+    z-index: 9999;
+  }
+
+  button:hover {
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+  }
   
+  .contact-btn:hover {
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.active {
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+}
