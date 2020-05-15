@@ -1,7 +1,9 @@
 window.addEventListener("load", function() {
-    let load_screen = document.getElementById('load_screen');
-    document.body.removeChild(load_screen);
-}, 5000);
+    setTimeout(() => {
+        let load_screen = document.getElementById('load_screen');
+        document.body.removeChild(load_screen);
+    });
+});
 
 const links = document.querySelectorAll('.links');
 const sections = document.querySelectorAll('section');
@@ -18,3 +20,9 @@ function changeLinkState() {
 
 changeLinkState();
 window.addEventListener('scroll', changeLinkState);
+
+function darkMode() {
+    var element = document.body;
+   element.classList.toggle("dark-mode");
+   document.getElementsByClassName('toggle-btn')[0].classList.toggle('active');
+}

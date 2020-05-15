@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no maximum-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="icon" href="https://img.icons8.com/nolan/2x/ruby-programming-language.png" />
   <title>Mai's Portfolio</title>
 </head>
@@ -42,6 +43,17 @@
           <li class="nav-item links">
             <a class="nav-link" href="#contact">contAct</a>
           </li>
+          <li class="nav-item links">
+            <div class="toggle">
+              <div class="toggle-btn" onclick="darkMode()">
+                <div class="inner-circle"> </div>
+                <img class="sun" src="https://image.flaticon.com/icons/svg/1164/1164954.svg" width="35" height="35" alt="Sun free icon" title="Sun free icon" />
+                <img class="moon" src="https://image.flaticon.com/icons/svg/2033/2033921.svg" width="35" height="35" alt="Moon free icon" title="Moon free icon" />
+              </div>
+            </div>
+            </div>
+            <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+          </li>
 
           <!-- <li class="nav-item">
               <button type="button" class="btn btn-outline-primary contact-btn">Resume</button> 
@@ -62,7 +74,7 @@
         My goal is to be FullStack Developer because I know<br />
         how important it is to have a wide knowledge across the stacks..
       </p>
-      <button type="button" class="btn btn-outline-primary" data-toggle="button">
+      <button type="button" class="btn gradient" data-toggle="button">
         <a href="mailto:mai.campbell@outlook.com" role="button"></a>Get in Touch
     </button>
     </div>
@@ -255,34 +267,35 @@
        Feel free to get int touch with me. I a always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
       <!-- <hr class="my-4 mt-5">
       <p class="mt-5">It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-      <a class="btn btn-outline-primary btn-lg mt-5 contact-btn" href="mailto:mai.campbell@outlook.com" role="button">Get in Touch</a>
+      <a class="btn gradient contact-btn" href="mailto:mai.campbell@outlook.com" role="button">Get in Touch</a>
   </section>
 
   <footer class="footer-bottom">
     <nav class="navbar navbar-expand-lg d-flex justify-content-center bg-dark navbar-dark">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/PA55ION" target="_blank">
-            <span class="iconify social-icon" data-icon="mdi:github-box" data-inline="false">
-            </span>
+            <div class="social_icon">
+              <a class="nav-link" href="https://github.com/PA55ION" target="_blank"><i class="fa fa-github-square"></i></a>
+            </div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/phakarat.jaruprakas?ref=bookmarks" target="_blank">
-            <span class="iconify social-icon" data-icon="mdi:facebook-box" data-inline="false">
+            <div class="social_icon">
+              <a class="nav-link "href="https://www.facebook.com/phakarat.jaruprakas?ref=bookmarks" target="_blank"><i class="fa fa-facebook-square"></i></a>
             </span>
+          </div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/mai-campbell-a3741a61" target="_blank">
-            <span class="iconify social-icon" data-icon="mdi:linkedin-box" data-inline="false">
-            </span>
+            <div class="social_icon">
+              <a class="nav-link" href="https://www.linkedin.com/in/mai-campbell/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="iconify social-icon" data-icon="mdi:instagram" data-inline="false">
-            </span>
+            <div class="social_icon">
+              <a class="nav-link" href="#" target="__blank"><i class="fa fa-instagram"></i></a>
+            </div>
           </a>
         </li>
       </ul>
