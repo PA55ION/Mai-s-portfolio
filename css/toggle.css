@@ -5,7 +5,7 @@
 
 .moon {
   position: relative;
-  left: 24px;
+  left: 4px;
   top: -28px;
 }
 
@@ -25,7 +25,8 @@
   border-radius: 50%;
   position: relative;
   top: 2px;
-  left: 3px;
+  left: 2px;
+
   background: #eff0f2;
   z-index: 35;
   -webkit-border-radius: 50%;
@@ -36,7 +37,7 @@
 }
 
 .toggle-btn {
-  width: 80px;
+  width: 60px;
   height: 30px;
   border: 2px solid black;
   background: -webkit-linear-gradient(#39598a, #79d7ed);
@@ -59,7 +60,7 @@
 }
 
 .toggle-btn.active > .inner-circle {
-  margin-left: 52px;
+  margin-left: 31px;
 }
 
 .dark-mode {
