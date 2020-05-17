@@ -705,6 +705,7 @@ and (min-device-width : 480px){
     -webkit-text-fill-color: transparent;
 }
 
+
 .social_icon a i{
     font-size: 30px;      
     background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
