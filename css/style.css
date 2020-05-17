@@ -13,12 +13,10 @@
 
 body::-webkit-scrollbar {
     width: .5em;
-   
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-  
+    border-radius: 10px; 
 }
 
 body::-webkit-scrollbar-track {
@@ -564,8 +562,15 @@ and (min-device-width : 480px){
   
 }
 .github-icon, .new-window-icon {
-    font-size: 24px;
+    font-size: 30px;
     margin: 20px 0 20px 0;
+    background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
 }
 
 .technologies {
@@ -650,40 +655,29 @@ and (min-device-width : 480px){
     box-shadow: 5px 1000px 1px #fff inset;
    }
 
-  button {
+  .btn {
     position: relative;
     z-index: 999;
+    border: 2px solid transparent !important;
   }
 
-  button:hover {
-    cursor: pointer;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    /*background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    */box-shadow: none;
-    color: white !important;
-   
-}
-  
-  .contact-btn:hover {
-    cursor: pointer;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+.gradient:hover {
     box-shadow: none;
     color: white !important;
- 
+    cursor: pointer;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.contact-btn:hover{
+    list-style-type: none;
+    color: white;
 }
 
 @keyframes pulse {
@@ -733,10 +727,14 @@ and (min-device-width : 480px){
     animation-direction: normal;
     animation-fill-mode: none;
    }
+
+
 /*dark mode */
    .dark-mode {
-       background: #222222;
+       background: #121212;
        color: white;
+       opacity: 0.87;
+  
    }
 
    .dark-mode h1 {
@@ -745,8 +743,35 @@ and (min-device-width : 480px){
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* color: #f8f9fa; */
+    color: #fefefe
+   }
+
+   .dark-mode .bio-text {
+    /* background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent; */
+   color: #e9ebf0;
+   opacity: 0.67;
    }
 
    .dark-mode .card {
        background: #272c34;
+   }
+
+   .dark-mode .gradient {
+    box-shadow: 5px 1000px 1px #272c34 inset;
+    color: white !important;
+   }
+
+   .dark-mode .gradient:hover {
+       box-shadow: none;
+   }
+
+   .dark-mode .connect-description {
+       color: black;
    }

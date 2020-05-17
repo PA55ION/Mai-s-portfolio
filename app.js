@@ -26,3 +26,12 @@ function darkMode() {
    element.classList.toggle("dark-mode");
    document.getElementsByClassName('toggle-btn')[0].classList.toggle('active');
 }
+
+const setTheme = () => {
+    let theme = 'light';
+    if(theme === 'dark') {
+        window.localStorage.setItem('theme', 'dark');
+    } else {
+        window.localStorage.setItem('theme', 'light')
+    }
+}
