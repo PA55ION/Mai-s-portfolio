@@ -2,14 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 @import "./toggle.css";
-
-:root {
-    --size: 12vmin;
-    --loader_w: calc(var(--size) * 6);
-	--loader_h: calc(var(--size) * 2.3);
-	--bubble: calc(var(--size) * 1.5);
-	--shine: calc(var(--size) / 5);
-}
+@import "./darkmode.css";
+@import "./footer.css";
+@import "./loading.css";
+@import "./responsive.css";
 
 body::-webkit-scrollbar {
     width: .5em;
@@ -26,7 +22,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-image:  linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background-image:  linear-gradient(#FA8BFF, #2BD2FF);
 }
 
 html, body {
@@ -39,107 +35,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* loading screen style */
 
-#load_screen {
-    width: 100%;
-    height: 100%;
-    background: black;
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-} 
-
-.bubble {
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    border: 2px solid black;
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    animation: blow 1.6s linear alternate infinite;
-    transform: scale(0.5) translateY(50%);
-    outline: 1px solid transparent;
-    position: absolute;
-    top: 48.5%;
-    left: 48.5%;
-}
-
-  .shine {
-      width: 15px;
-      height: 5px;
-      background: white;
-      border: 2px;
-      position: absolute;
-      border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
-      transform: rotateZ(130deg);
-      top: 11%;
-      left: 12%;
-      -webkit-transform: rotateZ(130deg);
-      -moz-transform: rotateZ(130deg);
-      -ms-transform: rotateZ(130deg);
-      -o-transform: rotateZ(130deg);
-      -webkit-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
-      -moz-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
-      -ms-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
-      -o-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
-}
-
-.small-shine {
-    width: 5px;
-    height: 5px;
-    background: white;
-    border: 2px;
-    position: absolute;
-    border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
-    transform: rotateZ(130deg);
-    top: 32%;
-    left: 9%    ;
-    -webkit-transform: rotateZ(130deg);
-    -moz-transform: rotateZ(130deg);
-    -ms-transform: rotateZ(130deg);
-    -o-transform: rotateZ(130deg);
-    -webkit-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
-    -moz-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
-    -ms-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
-    -o-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
-
-}
-  
-  .loading {
-    font-family: 'Major Mono Display', monospace;
-    font-size: 50px;
-    margin-left: -150px;
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    text-transform: uppercase;
-
-}
-  
-  @keyframes blow {
-      0% {
-          transform: scale(0.5) translateY(50%);
-      }
-      20% {
-          transform: scale(0.6) translateY(33%);
-      }
-      40% {
-          transform: scale(0.7) translateY(21%);
-      }
-      60% {
-          transform: scale(0.8) translateY(12%);
-      }
-      80% {
-          transform: scale(0.9) translateY(5%);
-      }
-      93%, 100% {
-          transform: scale(1) translateY(0) translateZ(0);
-      }
-  }  
 /*end of loader section */
 
 .section { 
@@ -177,20 +73,19 @@ h1 {
 }
 
 .name {
-    font-size: 80px;
+    font-size: 10vw;
     line-height: 88px;
     font-family: 'Montserrat', cursive;
 }
 
 .bio-text {
-    font-size: 65px;
-    line-height: 88px;
+    font-size: 8vw;
     font-family: 'Montserrat', cursive;
     color: #27556d;
 }
 
 .intro {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     font-family: 'Montserrat', cursive;
     margin-bottom: 75px;
@@ -202,8 +97,8 @@ h1 {
 
 .about {
     margin: 120px 0 50px 0; 
-    position: relative;
-    left: 80px;
+    position: relative; 
+    left: 120px;
     font-family: 'Major Mono Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -214,7 +109,7 @@ h1 {
     margin-top: 200px;
     margin-bottom: 150px;
     color: white;
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF);
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    */
@@ -223,6 +118,7 @@ h1 {
 .bio {
     font-size: 20px;
     line-height: 32px;
+    margin-left: 20px;
 }
 
 .navbar-brand {
@@ -244,12 +140,13 @@ h1 {
 }
 .profile-img {
     border-radius: 50%;
-    margin-top: 200px;
+    margin-top: 50px;
     width: 300px;
     height: 300px;
     text-align: center;
     vertical-align: center;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-bottom: 100px;
 }
 
 .btn {
@@ -268,273 +165,6 @@ h1 {
   
 p {
     font-family: 'Montserrat', sans-serif;
-}
-   
-
-
-@media only screen
-and (min-device-width : 360px)
-and (min-device-width : 480px){
-
-    .name {
-        font-size: 8vw;
-    }
-    .bio-text {
-        font-size: 8vw;
-    }
-    .intro {
-        font-size: 18px;
-    }
-    .profile-img {
-        margin-top: 80px;
-        margin-bottom: 80px;
-        margin-left: 80px;
-    }
-    .connect-description {
-        font-size: 18px;
-        width: 5000px;
-    }
-  
-}
-
-@media (max-width: 23.5em) {
-    .name {
-        font-size: 40px;
-        line-height: 60px;
-    }
-    .bio-text {
-        font-size: 40px;
-        line-height: 60px;
-    }
-    .intro {
-        font-size: 18px;
-    }
-    .profile-img {
-        width: 200px;
-        height: 200px;
-        margin-top: 30px;
-        margin-bottom: 100px;
-        margin-left: 65px;
-    }
-}
-
-@media (max-width: 30em) {
-    .name {
-        font-size: 50px;
-        margin-bottom: -10px;
-    }
-    .bio-text {
-        font-size: 50px;
-    }
-    .profile-img {
-        width: 250px;
-        height: 250px;
-        margin-top: 70px;
-        margin-left: 75px;
-        margin-bottom: 80px;
-
-    }
-
-    .bio {
-        font-size: 18px;
-    }
-    .connect-description {
-        font-size: 16px;
-        
-    }
-
-} 
-
-@media (max-width: 48em) {
-    .name {
-        font-size: 60px;
-        margin-bottom: -10px;
-    }
-    .bio-text {
-        font-size: 60px
-    }
-    .intro {
-        font-size: 20px;
-    }
-    .connect-text {
-        font-size: 40px;
-    }
-    .connect-description {
-        font-size: 14px;
-        width: 300px;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-
-} 
-
-@media (min-width: 320px) {
-    .name {
-        font-size: 10vw;
-    }
-    .bio-text {
-        font-size: 10vw;
-        line-height: 60px;
-    }
-
-    .profile-img {
-        margin-left: 40px;
-    }
-
-}
-@media (min-width: 411px) {
-    .connect-text {
-        margin-top: 250px;
-    }
-}
-
-
-@media (min-width: 600px) { 
-    .name {
-        font-size: 9vw;
-    }
-    .bio-text {
-        font-size: 7vw;
-    }
-    .bio {
-        font-size: 18px;
-    }
-    .intro {
-        font-size: 17px;
-    }
-
-    .profile-img {
-      margin-left: 140px;
-        
-    }
-    .social-icon {
-        font-size: 6vw;
-    }
-    .project {
-        font-size: 7vw;
-    }
-    
-    .connect-description {
-        width: 560px;
-    }
-}
-
-
-
-@media (min-width: 768px) {
-    .name {
-        font-size: 8vw;
-    }
-    .bio-text {
-        font-size: 46px;
-    }
-    .intro {
-        font-size: 18px;
-    }
-    .about {
-        float: left;
-    }
-    .bio {
-        font-size: 18px;
-        float: left;
-        
-    }
-    .profile-img {
-        width: 230px;
-        height: 230px;
-        float: right;
-        margin-top: -350px;
-
-    }
-    .social-icon {
-        font-size: 5vw;
-    }
-
-    .project {
-        font-size: 5vw;
-    }
-
-
-}
-
-@media (min-width: 992px) {
-    .name {
-        font-size: 6vw;
-    }
-    .bio-text {
-        font-size: 5vw;
-    }
-    .intro {
-        font-size: 20px;
-    }
-    .bio{
-        font-size: 20px;
-    }
-    .profile-img {
-        margin-top: 200px;
-        margin-left: 40px;
-    }
-    .bubble {
-        top: 47.8%;
-        left: 49.5%;
-    
-    }
-    .social-icon {
-        font-size: 4vw;
-    }
-    .project {
-        font-size: 5vw;
-    }
-}
-
-@media (min-width: 1024px) {
-    .connect-text {
-        font-size: 40px;
-    }
-    .connect-description {
-        width: 580px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .contact-btn {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-
-@media (min-width: 1200px) {
-    .name{
-        font-size: 6vw;
-    }
-    .bio-text {
-        font-size: 4vw;
-    }
-    .intro {
-        font-size: 20px;
-    }
-    .bio {
-        font-size: 20px;
-    }
-    .profile-img {
-        margin-top: 250px;
-    }
-    .social-icon {
-        font-size: 3vw;
-    }
-    .project {
-        font-size: 5vw;
-    }
-
-    .connect-description {
-        width: 580px;
-        font-size: 18px;
-        text-align: center;
-
-    }
 }
 
 .portfolio {
@@ -559,92 +189,20 @@ and (min-device-width : 480px){
 .file-icon {
     font-size: 40px;
     margin-top: 20px;
-  
 }
-.github-icon, .new-window-icon {
-    font-size: 30px;
-    margin: 20px 0 20px 0;
-    background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent;
+.github-icon {
+   color: #FA8BFF;
+   font-size: 24px;
+}
+
+.new-window-icon {
+    font-size: 24px;
+    color: #2BD2FF;
 }
 
 .technologies {
     font-size: 12px;
-   
 }
-
-
-/* footer section */
-
-#contact {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-}
-
-.connect-text {
-    margin: 120px 0 35px 0;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
-}
-
-.connect-description {
-    font-size: 18px;
-    line-height: 2;
-    margin-bottom: 50px;
-}
-
-.contact-btn {
-    margin-bottom: 100px;
-    color: black !important;
-}
-
-.point-up {
-    font-size: 30px;
-    animation-name: point-up-animation;
-    animation-duration: 1.7s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes point-up-animation {
-    0%{
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    20%{
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    40%{
-      -webkit-transform: translateY(-30px);
-      transform: translateY(-30px);
-    }
-    50%{
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    60%{
-      -webkit-transform: translateY(-15px);
-      transform: translateY(-15px);
-    }
-    80%{
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    100%{
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
 
   .gradient {
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
@@ -708,9 +266,9 @@ and (min-device-width : 480px){
 
 .social_icon a i{
     font-size: 30px;      
-    background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -moz-linear-gradient(#FA8BFF, #2BD2FF);
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF);
+    background: linear-gradient(#FA8BFF, #2BD2FF);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -729,50 +287,245 @@ and (min-device-width : 480px){
     animation-fill-mode: none;
    }
 
+   @media (max-width: 320px) {
+    .name {
+        font-size: 2em;
+    }
+    .bio-text {
+        font-size: 10vw;
+        line-height: 60px;
+    }
 
-/*dark mode */
-   .dark-mode {
-       background: #121212;
-       color: white;
-       opacity: 0.87;
+    .profile-img {
+        margin-left: 40px;
+    }
+
+}
+@media (min-width: 411px) {
+    .connect-text {
+        margin-top: 250px;
+    }
+}
+
+@media (min-width: 600px) { 
+    .name {
+        font-size: 10vw;
+    }
+    .bio-text {
+        font-size: 6VW;
+    }
+    .bio {
+        font-size: 3vw;
+    }
+    .intro {
+        font-size: 17px;
+    }
+    .profile-img {
+      margin-left: 140px;
+    }
+    .social-icon {
+        font-size: 6vw;
+    }
+    .project {
+        font-size: 7vw;
+    }
+    .connect-description {
+        width: 560px;
+    }
+}
+
+
+
+@media (min-width: 736px) {
+    .name {
+        font-size: 9vw;
+    }
+    .bio-text {
+        font-size: 6vw;
+    }
+    .intro {
+        font-size: VW;
+    }
+    .about {
+       left: 182px;
+    }
+    .bio {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 75px;
+    }
+    /* .profile-img {
+        width: 230px;
+        height: 230px;
+        float: right;
+        margin-top: -350px;
+    } */
+    .social-icon {
+        font-size: 5vw;
+    }
+    .project {
+        font-size: 5vw;
+    }
+    .bubble {
+        left: 49.1%;
+        top: 48.5%
+    }
+}
+
+@media (min-width: 771px) {
+    .about {
+        left: 130px;
+        font-size: 30px;
+    }
+    .bio {
+        margin-left: 125px;
+    }
+}
+
+@media (min-width: 785px) {
+    .bio {
+        margin-left: 160px;
+    }
+    .profile-img {
+        margin-left: 190px;
+    }
+    .about {
+        left: 185px;
+    }
+}
+
+@media (min-width: 815px) {
+    .about {
+        left: 229px;
+        font-size: 34px;
+    }
+}
+
+
+@media (min-width: 933px) {
+    .bio-text{
+        font-size: 4vw;
+
+    }
+}
+@media (min-width: 992px) {
+    .name {
+        font-size: 6vw;
+    }
+    .bio-text {
+        font-size: 4vw;
+    }
+    .intro {
+        font-size: 20px;
+    }
   
-   }
+    .bubble {
+        top: 48.8%;
+        left: 49.2%;
+    }
+    .social-icon {
+        font-size: 4vw;
+    }
+    .project {
+        font-size: 5vw;
+    }
 
-   .dark-mode h1 {
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* color: #f8f9fa; */
-    color: #fefefe
-   }
+    .about{
+        margin: 180px 0 20px 0; 
+        left: -4px;
+    }
+    .bio {
+        font-size: 18px;
+        margin-left: 70px;
+    }
 
-   .dark-mode .bio-text {
-    /* background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent; */
-   color: #e9ebf0;
-   opacity: 0.67;
-   }
+    .profile-img {
+        position: relative;
+        top: -445px;
+        left: 380px;
+    }
+ 
+}
 
-   .dark-mode .card {
-       background: #272c34;
-   }
+@media (min-width: 1013px) {
+    .bio {
+        margin-left: 70px;
+    }
+    .about {
+        left: -5px;
+    }
 
-   .dark-mode .gradient {
-    box-shadow: 5px 1000px 1px #272c34 inset;
-    color: white !important;
-   }
+}
 
-   .dark-mode .gradient:hover {
-       box-shadow: none;
-   }
+@media (min-width: 1024px) {
+    .connect-text {
+        font-size: 40px;
+    }
+    .connect-description {
+        width: 580px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .contact-btn {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 
-   .dark-mode .connect-description {
-       color: black;
-   }
+    .bio {
+       margin-left: 30px;
+    }
+    .about {
+        left: -70px;
+    }
+   
+}
+
+
+@media (min-width: 1200px) {
+    .name{
+        font-size: 6vw;
+    }
+    .bio-text {
+        font-size: 4vw;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .bio {
+        font-size: 20px;
+    }
+    /* .profile-img {
+        margin-top: 550px;
+        position: relative;
+        left: 35px;
+    } */
+    .social-icon {
+        font-size: 3vw;
+    }
+    .project {
+        font-size: 5vw;
+    }
+    .connect-description {
+        width: 580px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .bubble {
+        left: 49.5%;
+    }
+    .about{
+        margin: 190px 50px 30px 0; 
+        left: -70px;
+    }
+
+    .bio {
+        margin-left: 80px;
+    }
+
+    .profile-img {
+        position: relative;
+        right: -450px;
+        top: -445px; 
+        left: 550px;
+    }
+} 

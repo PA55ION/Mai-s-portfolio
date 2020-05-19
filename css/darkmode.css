@@ -1,0 +1,50 @@
+
+   .dark-mode {
+    background: #121212;
+    color: white;
+    opacity: 0.87;
+
+}
+
+.dark-mode h1 {
+ background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent; 
+
+}
+
+.dark-mode .bio-text {
+ /* background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+ background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+ background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ background-clip: text;
+-webkit-text-fill-color:transparent; */
+color: #e9ebf0;
+opacity: 0.67;
+}
+
+.dark-mode .card {
+    background: #272c34;
+}
+
+.dark-mode .gradient {
+ box-shadow: 5px 1000px 1px #272c34 inset;
+ color: white !important;
+}
+
+.dark-mode .gradient:hover {
+    box-shadow: none;
+}
+
+.dark-mode .file-icon {
+    color: white;
+    opacity: .87;
+}
+
+.dark-mode #contact {
+    background: #272c34;
+}

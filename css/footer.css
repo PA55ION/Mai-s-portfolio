@@ -1,0 +1,68 @@
+
+#contact {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.connect-text {
+    margin: 120px 0 35px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.connect-description {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.contact-btn {
+    margin-bottom: 100px;
+    color: black !important;
+}
+
+.point-up {
+    font-size: 30px;
+    animation-name: point-up-animation;
+    animation-duration: 1.7s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes point-up-animation {
+    0%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    20%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40%{
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    50%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    60%{
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+    80%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100%{
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+
+

@@ -1,0 +1,99 @@
+/* loading screen style */
+
+#load_screen {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+} 
+
+.bubble {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    animation: blow 1.6s linear alternate infinite;
+    transform: scale(0.5) translateY(50%);
+    outline: 1px solid transparent;
+    position: absolute;
+    top: 48.5%;
+    left: 48.5%;
+}
+
+  .shine {
+      width: 15px;
+      height: 5px;
+      background: white;
+      border: 2px;
+      position: absolute;
+      border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      transform: rotateZ(130deg);
+      top: 11%;
+      left: 12%;
+      -webkit-transform: rotateZ(130deg);
+      -moz-transform: rotateZ(130deg);
+      -ms-transform: rotateZ(130deg);
+      -o-transform: rotateZ(130deg);
+      -webkit-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -moz-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -ms-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+      -o-border-radius: 50% 20% 30% 100% / 50% 50% 40% 100% ;
+}
+
+.small-shine {
+    width: 5px;
+    height: 5px;
+    background: white;
+    border: 2px;
+    position: absolute;
+    border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    transform: rotateZ(130deg);
+    top: 32%;
+    left: 9%    ;
+    -webkit-transform: rotateZ(130deg);
+    -moz-transform: rotateZ(130deg);
+    -ms-transform: rotateZ(130deg);
+    -o-transform: rotateZ(130deg);
+    -webkit-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -moz-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -ms-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+    -o-border-radius: 50% 30% 30% 100% / 100% 50% 40% 100% ;
+}
+  
+  .loading {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    margin-left: -150px;
+    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+}
+  
+  @keyframes blow {
+      0% {
+          transform: scale(0.5) translateY(50%);
+      }
+      20% {
+          transform: scale(0.6) translateY(33%);
+      }
+      40% {
+          transform: scale(0.7) translateY(21%);
+      }
+      60% {
+          transform: scale(0.8) translateY(12%);
+      }
+      80% {
+          transform: scale(0.9) translateY(5%);
+      }
+      93%, 100% {
+          transform: scale(1) translateY(0) translateZ(0);
+      }
+  }  
