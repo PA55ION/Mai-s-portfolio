@@ -35,3 +35,5 @@ const setTheme = () => {
         window.localStorage.setItem('theme', 'light')
     }
 }
+
+setTheme();

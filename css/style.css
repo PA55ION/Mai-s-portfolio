@@ -99,6 +99,7 @@ h1 {
     margin: 120px 0 50px 0; 
     position: relative; 
     left: 120px;
+    font-size: 1.8em;
     font-family: 'Major Mono Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -106,8 +107,10 @@ h1 {
     /* height: 100%; */
     min-height: 100vh;
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    /* margin-top: 200px; 
+    margin-bottom: 100px; */
+    padding-top: 100px;
+    /* padding-bottom: -100px; */
     color: white;
     background: -webkit-linear-gradient(#FA8BFF, #2BD2FF);
     /* -webkit-background-clip: text;
@@ -116,9 +119,12 @@ h1 {
 }
 
 .bio {
-    font-size: 20px;
-    line-height: 32px;
-    margin-left: 20px;
+    font-size: 1em;
+    padding: 12px 24px;
+    word-wrap: break-word;
+    position: relative;
+    left: 75px;
+   
 }
 
 .navbar-brand {
@@ -141,12 +147,12 @@ h1 {
 .profile-img {
     border-radius: 50%;
     margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     text-align: center;
-    vertical-align: center;
-    margin-left: 80px;
     margin-bottom: 100px;
+    position: relative;
+    left: 140px;
 }
 
 .btn {
@@ -162,7 +168,6 @@ h1 {
     font-size: 40px;
 }
 
-  
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -181,7 +186,7 @@ p {
 }
 
 .project {
-    font-size: 65px;
+    font-size: 45px;
     padding-top: 75px;
     margin-bottom: 70px;
 }
@@ -334,6 +339,19 @@ p {
     }
 }
 
+@media (min-width: 633px) {
+    .about {
+        left: 160px;
+    }
+    .bio {
+        font-size: 3vw;
+    }
+    .profile-img {
+        left: 10px;
+        width: 180px;
+        height: 180px;
+    }
+}
 
 
 @media (min-width: 736px) {
@@ -346,20 +364,6 @@ p {
     .intro {
         font-size: VW;
     }
-    .about {
-       left: 182px;
-    }
-    .bio {
-        font-size: 20px;
-        text-align: left;
-        margin-left: 75px;
-    }
-    /* .profile-img {
-        width: 230px;
-        height: 230px;
-        float: right;
-        margin-top: -350px;
-    } */
     .social-icon {
         font-size: 5vw;
     }
@@ -367,37 +371,24 @@ p {
         font-size: 5vw;
     }
     .bubble {
-        left: 49.1%;
+        left: 51.1%;
         top: 48.5%
     }
 }
 
-@media (min-width: 771px) {
+@media (min-width: 824px) {
+    .bio {
+        font-size: 1.2em;
+        left: 20px;
+    }
     .about {
-        left: 130px;
-        font-size: 30px;
-    }
-    .bio {
-        margin-left: 125px;
-    }
-}
-
-@media (min-width: 785px) {
-    .bio {
-        margin-left: 160px;
+        left: 20px;
     }
     .profile-img {
-        margin-left: 190px;
-    }
-    .about {
-        left: 185px;
-    }
-}
-
-@media (min-width: 815px) {
-    .about {
-        left: 229px;
-        font-size: 34px;
+        top: -120%;
+        left: 280px;
+        width: 225px;
+        height: 225px;
     }
 }
 
@@ -405,7 +396,20 @@ p {
 @media (min-width: 933px) {
     .bio-text{
         font-size: 4vw;
-
+    }
+    .about {
+        left: -50px;
+    }
+    .bio {
+        left: -60px;
+        font-size: 1.2em;
+    }
+    .profile-img{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: -120%;
+        left: 40%;
     }
 }
 @media (min-width: 992px) {
@@ -420,8 +424,8 @@ p {
     }
   
     .bubble {
-        top: 48.8%;
-        left: 49.2%;
+        top: 48.5%;
+        left: 50.7%;
     }
     .social-icon {
         font-size: 4vw;
@@ -429,32 +433,12 @@ p {
     .project {
         font-size: 5vw;
     }
-
-    .about{
-        margin: 180px 0 20px 0; 
-        left: -4px;
-    }
     .bio {
-        font-size: 18px;
-        margin-left: 70px;
-    }
-
-    .profile-img {
-        position: relative;
-        top: -445px;
-        left: 380px;
-    }
- 
-}
-
-@media (min-width: 1013px) {
-    .bio {
-        margin-left: 70px;
+        left: 10%;
     }
     .about {
-        left: -5px;
+        left: 10px;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -470,14 +454,9 @@ p {
         margin-top: 20px;
         margin-bottom: 30px;
     }
-
-    .bio {
-       margin-left: 30px;
+    .profile-img {
+        left: 48.3%;
     }
-    .about {
-        left: -70px;
-    }
-   
 }
 
 
@@ -491,14 +470,6 @@ p {
     .intro {
         font-size: 20px;
     }
-    .bio {
-        font-size: 20px;
-    }
-    /* .profile-img {
-        margin-top: 550px;
-        position: relative;
-        left: 35px;
-    } */
     .social-icon {
         font-size: 3vw;
     }
@@ -510,22 +481,19 @@ p {
         font-size: 18px;
         text-align: center;
     }
-    .bubble {
-        left: 49.5%;
+    .about {
+        left: 190px;
     }
-    .about{
-        margin: 190px 50px 30px 0; 
-        left: -70px;
-    }
-
     .bio {
-        margin-left: 80px;
+        left: 100px;
     }
-
     .profile-img {
-        position: relative;
-        right: -450px;
-        top: -445px; 
-        left: 550px;
+        left: -15%;
+        top: 30%;
+        width: 300px;
+        height: 300px;
+    }
+    .about-section {
+        padding-bottom: 200px;
     }
 } 

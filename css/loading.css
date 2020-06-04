@@ -19,8 +19,8 @@
     transform: scale(0.5) translateY(50%);
     outline: 1px solid transparent;
     position: absolute;
-    top: 48.5%;
-    left: 48.5%;
+    top: 47.8%;
+    left: 51.7%;
 }
 
   .shine {
@@ -65,8 +65,8 @@
   
   .loading {
     font-family: 'Major Mono Display', monospace;
-    font-size: 50px;
-    margin-left: -150px;
+    font-size: 45px;
+    margin-left: -120px;
     background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
     -webkit-background-clip: text;
     background-clip: text;
