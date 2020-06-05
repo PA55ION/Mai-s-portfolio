@@ -5,7 +5,7 @@
 @import "./darkmode.css";
 @import "./footer.css";
 @import "./loading.css";
-@import "./responsive.css";
+
 
 body::-webkit-scrollbar {
     width: .5em;
