@@ -138,10 +138,10 @@ h1 {
 .nav-item {
     font-family: 'Major Mono Display', cursive;
     font-weight: bold;
-    background: -webkit-linear-gradient(#e0eafc, #cfdef3); 
+    /* background: -webkit-linear-gradient(#e0eafc, #cfdef3); 
     background: -webkit-linear-gradient(#c6ffdd, #fbd786, #f7797d);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 .profile-img {
     border-radius: 50%;
