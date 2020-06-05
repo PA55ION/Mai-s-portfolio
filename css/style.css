@@ -6,7 +6,6 @@
 @import "./footer.css";
 @import "./loading.css";
 
-
 body::-webkit-scrollbar {
     width: .5em;
 }

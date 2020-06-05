@@ -19,8 +19,8 @@
     transform: scale(0.5) translateY(50%);
     outline: 1px solid transparent;
     position: absolute;
-    top: 47.8%;
-    left: 51.7%;
+    top: 43.5%;
+    left: 51.3%;
 }
 
   .shine {
@@ -72,7 +72,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     text-transform: uppercase;
 }
