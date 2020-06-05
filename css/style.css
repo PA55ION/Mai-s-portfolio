@@ -315,13 +315,13 @@ p {
         font-size: 6VW;
     }
     .bio {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     .intro {
         font-size: 17px;
     }
     .profile-img {
-      margin-left: 140px;
+      margin-left: 50px;
     }
     .social-icon {
         font-size: 6vw;
@@ -334,7 +334,7 @@ p {
     }
 }
 
-@media (min-width: 633px) {
+/* @media (min-width: 633px) {
     .about {
         left: 160px;
     }
@@ -346,7 +346,7 @@ p {
         width: 180px;
         height: 180px;
     }
-}
+} */
 
 
 @media (min-width: 736px) {
@@ -365,23 +365,23 @@ p {
     .project {
         font-size: 5vw;
     }
-    .bubble {
+    /* .bubble {
         left: 51.1%;
         top: 48.5%
-    }
+    } */
 }
 
 @media (min-width: 824px) {
     .bio {
-        font-size: 1.2em;
+        font-size: 1em;
         left: 20px;
     }
     .about {
         left: 20px;
     }
     .profile-img {
-        top: -120%;
-        left: 280px;
+        top: -110%;
+        left: 380px;
         width: 225px;
         height: 225px;
     }
@@ -392,7 +392,7 @@ p {
     .bio-text{
         font-size: 4vw;
     }
-    .about {
+    /* .about {
         left: -50px;
     }
     .bio {
@@ -405,7 +405,7 @@ p {
         position: relative;
         top: -120%;
         left: 40%;
-    }
+    } */
 }
 @media (min-width: 992px) {
     .name {
@@ -417,9 +417,8 @@ p {
     .intro {
         font-size: 20px;
     }
-  
     .bubble {
-        top: 48.5%;
+        top: 43.5%;
         left: 50.7%;
     }
     .social-icon {
@@ -432,7 +431,13 @@ p {
         left: 10%;
     }
     .about {
-        left: 10px;
+        left: -30px;
+    }
+    .profile-img {
+        width: 225px;
+        height: 225px;
+        top: -120%;
+        margin-left: 150px;
     }
 }
 
@@ -449,13 +454,10 @@ p {
         margin-top: 20px;
         margin-bottom: 30px;
     }
-    .profile-img {
-        left: 48.3%;
-    }
 }
 
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .name{
         font-size: 6vw;
     }
@@ -477,7 +479,7 @@ p {
         text-align: center;
     }
     .about {
-        left: 190px;
+        left: 150px;
     }
     .bio {
         left: 100px;
@@ -492,3 +494,9 @@ p {
         padding-bottom: 200px;
     }
 } 
+
+@media screen and (min-width: 1400px) {
+    .bubble {
+        left: 50.5%;
+    }
+}
