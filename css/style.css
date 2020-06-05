@@ -151,7 +151,7 @@ h1 {
     text-align: center;
     margin-bottom: 100px;
     position: relative;
-    left: 140px;
+    left: 120px;
 }
 
 .btn {
@@ -260,7 +260,11 @@ p {
 }
 
 .active {
+    background: #2BD2FF;
     background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
+    background: -o-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
     -webkit-background-clip: text;
     background-clip: text;
     -moz-background-clip: text;
