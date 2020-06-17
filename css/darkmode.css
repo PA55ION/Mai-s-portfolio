@@ -1,9 +1,13 @@
 
-   .dark-mode {
+.light-theme {
+    background: white;
+    color: black;
+}
+
+.dark-mode {
     background: #121212;
     color: white;
     opacity: 0.87;
-
 }
 
 .dark-mode h1 {

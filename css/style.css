@@ -76,7 +76,7 @@ h1 {
 }
 
 .bio-text {
-  font-size: 7vw;
+  font-size: 10vw;
   font-family: "Montserrat", cursive;
   color: #27556d;
 }
@@ -118,11 +118,11 @@ h1 {
 }
 
 .bio {
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 12px 24px;
   word-wrap: break-word;
   position: relative;
-  left: 55px;
+  left: 25px;
 }
 
 .navbar-brand {
@@ -314,8 +314,11 @@ p {
   .bio-text {
     font-size: 6vw;
   }
+  .about {
+    font-size: 2.5em;
+  }
   .bio {
-    font-size: 2.5vw;
+    font-size: 1.4em;
   }
   .intro {
     font-size: 17px;
@@ -352,13 +355,35 @@ p {
   }
 }
 
-@media (min-width: 824px) {
+/* @media screen and (min-width: 769px) {
   .bio {
     font-size: 1em;
+    left: -50px;
+    font-size: 1.2em;
+  }
+  .about {
+    left: 10px;
+    font-size: 2em;
+  }
+  .profile-img {
+    top: -110%;
+    left: 320px;
+    width: 225px;
+    height: 225px;
+  }
+} */
+
+
+@media (min-width: 824px) {
+  .bio {
+    font-size: 1.2em;
     left: 20px;
   }
   .about {
-    left: 20px;
+    left: 70px;
+    font-size: 2em;
+
+
   }
   .profile-img {
     top: -110%;
@@ -397,7 +422,7 @@ p {
     left: 10%;
   }
   .about {
-    left: -30px;
+    left: 30px;
   }
   .profile-img {
     width: 225px;
@@ -444,19 +469,16 @@ p {
     text-align: center;
   }
   .about {
-    left: 150px;
+    left: -50px;
   }
   .bio {
     left: 100px;
   }
   .profile-img {
-    left: -15%;
-    top: 30%;
+    left: 45%;
+    top: -100%;
     width: 300px;
     height: 300px;
-  }
-  .about-section {
-    padding-bottom: 200px;
   }
 }
 

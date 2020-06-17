@@ -20,10 +20,3 @@ function changeLinkState() {
 changeLinkState();
 window.addEventListener("scroll", changeLinkState);
 
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-  document.getElementsByClassName("toggle-btn")[0].classList.toggle("active");
-}
-
-
