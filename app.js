@@ -1,39 +1,29 @@
-window.addEventListener("load", function() {
-    setTimeout(() => {
-        let load_screen = document.getElementById('load_screen');
-        document.body.removeChild(load_screen);
-    }, 3000);
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    let load_screen = document.getElementById("load_screen");
+    document.body.removeChild(load_screen);
+  });
 });
 
-const links = document.querySelectorAll('.links');
-const sections = document.querySelectorAll('section');
-
+const links = document.querySelectorAll(".links");
+const sections = document.querySelectorAll("section");
 
 function changeLinkState() {
-    let index = sections.length;
+  let index = sections.length;
 
-    while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
-  
-    links.forEach((link) => link.classList.remove('active'));
-    links[index].classList.add('active');
+  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+  links.forEach((link) => link.classList.remove("active"));
+  links[index].classList.add("active");
 }
 
 changeLinkState();
-window.addEventListener('scroll', changeLinkState);
+window.addEventListener("scroll", changeLinkState);
 
 function darkMode() {
-    var element = document.body;
-   element.classList.toggle("dark-mode");
-   document.getElementsByClassName('toggle-btn')[0].classList.toggle('active');
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  document.getElementsByClassName("toggle-btn")[0].classList.toggle("active");
 }
 
-const setTheme = () => {
-    let theme = 'light';
-    if(theme === 'dark') {
-        window.localStorage.setItem('theme', 'dark');
-    } else {
-        window.localStorage.setItem('theme', 'light')
-    }
-}
 
-setTheme();

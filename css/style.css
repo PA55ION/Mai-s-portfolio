@@ -1,502 +1,467 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 @import "./toggle.css";
 @import "./darkmode.css";
 @import "./footer.css";
 @import "./loading.css";
 
 body::-webkit-scrollbar {
-    width: .5em;
+  width: 0.5em;
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px; 
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-image:  linear-gradient(#FA8BFF, #2BD2FF);
+  background-image: linear-gradient(#fa8bff, #2bd2ff);
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
-
 
 /*end of loader section */
 
-.section { 
-    height: 100vh; 
+.section {
+  height: 100vh;
 }
 
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: 50% 50%; 
- } 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
- canvas {
-    display: block;
+canvas {
+  display: block;
 }
 
 .main-section {
-    margin-top: 150px;
-    margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .hello {
-    font-size: 16px;
-  
+  font-size: 16px;
 }
 
 h1 {
-    font-size: 10vw;
-    line-height: 88px;
-    font-family: 'Montserrat', cursive;
-    color: #05284b;
+  font-size: 10vw;
+  line-height: 88px;
+  font-family: "Montserrat", cursive;
+  color: #05284b;
 }
 
 .name {
-    font-size: 10vw;
-    line-height: 88px;
-    font-family: 'Montserrat', cursive;
+  font-size: 10vw;
+  line-height: 88px;
+  font-family: "Montserrat", cursive;
 }
 
 .bio-text {
-    font-size: 7vw;
-    font-family: 'Montserrat', cursive;
-    color: #27556d;
+  font-size: 7vw;
+  font-family: "Montserrat", cursive;
+  color: #27556d;
 }
 
 .intro {
-    font-size: 1em;
-    line-height: 32px;
-    font-family: 'Montserrat', cursive;
-    margin-bottom: 75px;
+  font-size: 1em;
+  line-height: 32px;
+  font-family: "Montserrat", cursive;
+  margin-bottom: 75px;
 }
 
 .contact-btn {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .about {
-    margin: 120px 0 50px 0; 
-    position: relative; 
-    left: 110px;
-    font-size: 1.8em;
-    font-family: 'Major Mono Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 120px 0 50px 0;
+  position: relative;
+  left: 110px;
+  font-size: 1.8em;
+  font-family: "Major Mono Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .about-section {
-    /* height: 100%; */
-    min-height: 100vh;
-    width: 100%;
-    /* margin-top: 200px; 
-    margin-bottom: 100px; */
-    padding-top: 100px;
-    /* padding-bottom: -100px; */
-    color: white;
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF);
-    /* -webkit-background-clip: text;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 300px; 
+  margin-bottom: 100px;
+  padding-top: 100px;
+  /* padding-bottom: -100px; */
+  color: white;
+  background: -webkit-linear-gradient(#fa8bff, #2bd2ff);
+  /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    */
 }
 
 .bio {
-    font-size: 1em;
-    padding: 12px 24px;
-    word-wrap: break-word;
-    position: relative;
-    left: 55px;
-   
+  font-size: 1em;
+  padding: 12px 24px;
+  word-wrap: break-word;
+  position: relative;
+  left: 55px;
 }
 
 .navbar-brand {
-    font-family: 'Major Mono Display', cursive;
-    font-weight: bold;
+  font-family: "Major Mono Display", cursive;
+  font-weight: bold;
 }
 
 .nav-link {
-    font-family: 'Major Mono Display', cursive;
-    font-weight: bold;
+  font-family: "Major Mono Display", cursive;
+  font-weight: bold;
 }
 .profile-img {
-    border-radius: 50%;
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin-bottom: 100px;
-    position: relative;
-    left: 100px;
+  border-radius: 50%;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+  left: 100px;
 }
 
 .btn {
-    margin-top: 100x;
+  margin-top: 100x;
 }
 
 .heart {
-    color: red;
-    font-size: 14px;
+  color: red;
+  font-size: 14px;
 }
 
 .social-icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .portfolio {
-    height: 100vh;
+  height: 100vh;
 }
 
-
 /*projects section*/
-.projects-section{
-    min-height: 100vh;
-    /* margin-top: 100px; */
-    margin-bottom: 200px;
-    line-height: 1.5;
+.projects-section {
+  min-height: 100vh;
+  /* margin-top: 100px; */
+  margin-bottom: 200px;
+  line-height: 1.5;
 }
 
 .project {
-    font-size: 45px;
-    padding-top: 75px;
-    margin-bottom: 70px;
+  font-size: 45px;
+  padding-top: 75px;
+  margin-bottom: 70px;
 }
 
 .file-icon {
-    font-size: 40px;
-    margin-top: 20px;
+  font-size: 40px;
+  margin-top: 20px;
 }
 .github-icon {
-   color: #FA8BFF;
-   font-size: 24px;
+  color: #fa8bff;
+  font-size: 24px;
 }
 
 .new-window-icon {
-    font-size: 24px;
-    color: #2BD2FF;
+  font-size: 24px;
+  color: #2bd2ff;
 }
 
 .technologies {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-  .gradient {
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 5px 1000px 1px #fff inset;
-   }
+.gradient {
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 5px 1000px 1px #fff inset;
+}
 
-  .btn {
-    position: relative;
-    z-index: 999;
-    border: 2px solid transparent !important;
-  }
+.btn {
+  position: relative;
+  z-index: 999;
+  border: 2px solid transparent !important;
+}
 
 .gradient:hover {
-    box-shadow: none;
-    color: white !important;
-    cursor: pointer;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+  box-shadow: none;
+  color: white !important;
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
 }
 
-.contact-btn:hover{
-    list-style-type: none;
-    color: white;
+.contact-btn:hover {
+  list-style-type: none;
+  color: white;
 }
 
 @keyframes pulse {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 
-    50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-    }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
 
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .active {
-    background: #2BD2FF;
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: -moz-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    background: -o-linear-gradient(#FA8BFF, #2BD2FF, #2BFF88);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: #2bd2ff;
+  background: -webkit-linear-gradient(#fa8bff, #2bd2ff, #2bff88);
+  background: linear-gradient(#fa8bff, #2bd2ff, #2bff88);
+  background: -moz-linear-gradient(#fa8bff, #2bd2ff, #2bff88);
+  background: -o-linear-gradient(#fa8bff, #2bd2ff, #2bff88);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.social_icon a i {
+  font-size: 30px;
+  background: -moz-linear-gradient(#fa8bff, #2bd2ff);
+  background: -webkit-linear-gradient(#fa8bff, #2bd2ff);
+  background: linear-gradient(#fa8bff, #2bd2ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-.social_icon a i{
-    font-size: 30px;      
-    background: -moz-linear-gradient(#FA8BFF, #2BD2FF);
-    background: -webkit-linear-gradient(#FA8BFF, #2BD2FF);
-    background: linear-gradient(#FA8BFF, #2BD2FF);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent;
-   }
+.social_icon:hover {
+  cursor: pointer;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
 
-   .social_icon:hover {
-    cursor: pointer;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-   }
+@media (max-width: 320px) {
+  .name {
+    font-size: 2em;
+  }
+  .bio-text {
+    font-size: 10vw;
+    line-height: 60px;
+  }
 
-   @media (max-width: 320px) {
-    .name {
-        font-size: 2em;
-    }
-    .bio-text {
-        font-size: 10vw;
-        line-height: 60px;
-    }
-
-    .profile-img {
-        margin-left: 40px;
-    }
-
+  .profile-img {
+    margin-left: 40px;
+  }
 }
 @media (min-width: 411px) {
-    .connect-text {
-        margin-top: 250px;
-    }
+  .connect-text {
+    margin-top: 250px;
+  }
 }
 
-@media (min-width: 600px) { 
-    .name {
-        font-size: 10vw;
-    }
-    .bio-text {
-        font-size: 6VW;
-    }
-    .bio {
-        font-size: 2.5vw;
-    }
-    .intro {
-        font-size: 17px;
-    }
-    .profile-img {
-      margin-left: 50px;
-    }
-    .social-icon {
-        font-size: 6vw;
-    }
-    .project {
-        font-size: 7vw;
-    }
-    .connect-description {
-        width: 560px;
-    }
+@media (min-width: 600px) {
+  .name {
+    font-size: 10vw;
+  }
+  .bio-text {
+    font-size: 6vw;
+  }
+  .bio {
+    font-size: 2.5vw;
+  }
+  .intro {
+    font-size: 17px;
+  }
+  .profile-img {
+    margin-left: 50px;
+  }
+  .social-icon {
+    font-size: 6vw;
+  }
+  .project {
+    font-size: 7vw;
+  }
+  .connect-description {
+    width: 560px;
+  }
 }
-
-/* @media (min-width: 633px) {
-    .about {
-        left: 160px;
-    }
-    .bio {
-        font-size: 3vw;
-    }
-    .profile-img {
-        left: 10px;
-        width: 180px;
-        height: 180px;
-    }
-} */
-
 
 @media (min-width: 736px) {
-    .name {
-        font-size: 9vw;
-    }
-    .bio-text {
-        font-size: 6vw;
-    }
-    .intro {
-        font-size: VW;
-    }
-    .social-icon {
-        font-size: 5vw;
-    }
-    .project {
-        font-size: 5vw;
-    }
-    /* .bubble {
-        left: 51.1%;
-        top: 48.5%
-    } */
+  .name {
+    font-size: 9vw;
+  }
+  .bio-text {
+    font-size: 6vw;
+  }
+  .intro {
+    font-size: VW;
+  }
+  .social-icon {
+    font-size: 5vw;
+  }
+  .project {
+    font-size: 5vw;
+  }
 }
 
 @media (min-width: 824px) {
-    .bio {
-        font-size: 1em;
-        left: 20px;
-    }
-    .about {
-        left: 20px;
-    }
-    .profile-img {
-        top: -110%;
-        left: 380px;
-        width: 225px;
-        height: 225px;
-    }
+  .bio {
+    font-size: 1em;
+    left: 20px;
+  }
+  .about {
+    left: 20px;
+  }
+  .profile-img {
+    top: -110%;
+    left: 380px;
+    width: 225px;
+    height: 225px;
+  }
 }
-
 
 @media (min-width: 933px) {
-    .bio-text{
-        font-size: 4vw;
-    }
-    /* .about {
-        left: -50px;
-    }
-    .bio {
-        left: -60px;
-        font-size: 1.2em;
-    }
-    .profile-img{
-        width: 250px;
-        height: 250px;
-        position: relative;
-        top: -120%;
-        left: 40%;
-    } */
+  .bio-text {
+    font-size: 4vw;
+  }
 }
 @media (min-width: 992px) {
-    .name {
-        font-size: 6vw;
-    }
-    .bio-text {
-        font-size: 4vw;
-    }
-    .intro {
-        font-size: 20px;
-    }
-    .bubble {
-        top: 43.5%;
-        left: 50.7%;
-    }
-    .social-icon {
-        font-size: 4vw;
-    }
-    .project {
-        font-size: 5vw;
-    }
-    .bio {
-        left: 10%;
-    }
-    .about {
-        left: -30px;
-    }
-    .profile-img {
-        width: 225px;
-        height: 225px;
-        top: -120%;
-        margin-left: 150px;
-    }
+  .name {
+    font-size: 6vw;
+  }
+  .bio-text {
+    font-size: 4vw;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .bubble {
+    top: 43.5%;
+    left: 50.7%;
+  }
+  .social-icon {
+    font-size: 4vw;
+  }
+  .project {
+    font-size: 5vw;
+  }
+  .bio {
+    left: 10%;
+  }
+  .about {
+    left: -30px;
+  }
+  .profile-img {
+    width: 225px;
+    height: 225px;
+    top: -120%;
+    margin-left: 150px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .connect-text {
-        font-size: 40px;
-    }
-    .connect-description {
-        width: 580px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .contact-btn {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+  .connect-text {
+    font-size: 40px;
+  }
+  .connect-description {
+    width: 580px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .contact-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
-
 @media screen and (min-width: 1200px) {
-    .name{
-        font-size: 6vw;
-    }
-    .bio-text {
-        font-size: 4vw;
-    }
-    .intro {
-        font-size: 20px;
-    }
-    .social-icon {
-        font-size: 3vw;
-    }
-    .project {
-        font-size: 5vw;
-    }
-    .connect-description {
-        width: 580px;
-        font-size: 18px;
-        text-align: center;
-    }
-    .about {
-        left: 150px;
-    }
-    .bio {
-        left: 100px;
-    }
-    .profile-img {
-        left: -15%;
-        top: 30%;
-        width: 300px;
-        height: 300px;
-    }
-    .about-section {
-        padding-bottom: 200px;
-    }
-} 
+  .name {
+    font-size: 6vw;
+  }
+  .bio-text {
+    font-size: 4vw;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .social-icon {
+    font-size: 3vw;
+  }
+  .project {
+    font-size: 5vw;
+  }
+  .connect-description {
+    width: 580px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .about {
+    left: 150px;
+  }
+  .bio {
+    left: 100px;
+  }
+  .profile-img {
+    left: -15%;
+    top: 30%;
+    width: 300px;
+    height: 300px;
+  }
+  .about-section {
+    padding-bottom: 200px;
+  }
+}
 
 @media screen and (min-width: 1400px) {
-    .bubble {
-        left: 50.5%;
-    }
+  .bubble {
+    left: 50.5%;
+  }
 }

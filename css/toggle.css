@@ -5,8 +5,8 @@
 
 .moon {
   position: relative;
-  left: 4px;
-  top: -28px;
+  left: 12px;
+  top: -26px;
 }
 
 .sun {
@@ -14,10 +14,6 @@
   top: -27px;
   left: 4px;
 }
-
-/* .toggle {
-
-} */
 
 .inner-circle {
   width: 22px;
