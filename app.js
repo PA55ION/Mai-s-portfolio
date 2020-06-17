@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     let load_screen = document.getElementById("load_screen");
     document.body.removeChild(load_screen);
-  });
+  },3000);
 });
 
 const links = document.querySelectorAll(".links");
