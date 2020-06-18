@@ -304,9 +304,21 @@ p {
   }
 }
 
-@media (min-width: 411px) {
+@media (min-width: 414px) {
   .connect-text {
     margin-top: 250px;
+  }
+  .profile-img {
+    margin-left: 15px;
+  }
+  .mr-auto {
+    margin-left: 20px !important;
+  }
+  .bio {
+    font-size: 1.1rem;
+  }
+  .about {
+    left: 90px;
   }
 }
 
