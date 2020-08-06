@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import "./toggle.css";
 @import "./darkmode.css";
 @import "./footer.css";
@@ -65,64 +67,66 @@ canvas {
 h1 {
   font-size: 10vw;
   line-height: 88px;
-  font-family: "Montserrat", cursive;
+  font-family: 'Karla', sans-serif;
   color: #05284b;
 }
 
 .name {
   font-size: 10vw;
   line-height: 88px;
-  font-family: "Montserrat", cursive;
+  font-family: 'Karla', sans-serif;
+
 }
 
 .bio-text {
   font-size: 7vw;
-  font-family: "Montserrat", cursive;
+  font-family: 'Karla', sans-serif;
   color: #27556d;
 }
 
 .intro {
   font-size: 1em;
   line-height: 32px;
-  font-family: "Montserrat", cursive;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 75px;
 }
 
 .contact-btn {
   margin-bottom: 100px;
+  font-family: 'Karla', sans-serif;
 }
 
 .about {
-  margin: 120px 0 50px 0;
-  position: relative;
-  left: 50px;
   font-size: 1.8em;
-  font-family: "Major Mono Display", -apple-system, BlinkMacSystemFont,
+  font-family: 'Karla', sans-serif;
+  /* font-family: "Major Mono Display", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-.about-section {
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  margin-top: 300px; 
-  margin-bottom: 100px;
-  padding-top: 100px;
-  /* padding-bottom: -100px; */
-  color: white;
-  background: -webkit-linear-gradient(#fa8bff, #2bd2ff);
-  /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-   */
+    sans-serif; */
 }
 
 .bio {
-  font-size: 1em;
-  padding: 12px 24px;
-  word-wrap: break-word;
-  /* position: relative;
-  left: 15px; */
+  font-family: 'Karla', sans-serif;
+  padding-right: 2em;
+}
+
+.text-section{
+  margin: 150px 20px 150px;
+}
+
+.about-section {
+  margin-top: 300px;
+  width: 100%; 
+  color: white;
+  background: -webkit-linear-gradient(#fa8bff, #2bd2ff);
+}
+
+.about {
+  margin-bottom: 55px;
+  font-size: 2rem;
+}
+
+.bio {
+  font-size: 1rem;
 }
 
 .navbar-brand {
@@ -134,15 +138,14 @@ h1 {
   font-family: "Major Mono Display", cursive;
   font-weight: bold;
 }
+
 .profile-img {
   border-radius: 50%;
-  margin-top: 50px;
   width: 200px;
   height: 200px;
-  text-align: center;
-  margin-bottom: 100px;
   position: relative;
-  left: 60px;
+  left: 75px;
+  margin-bottom: 100px;
 }
 
 .btn {
@@ -158,8 +161,8 @@ h1 {
   font-size: 40px;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
+p, h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .portfolio {
@@ -236,6 +239,8 @@ p {
   color: white;
 }
 
+
+
 @keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -288,39 +293,6 @@ p {
   animation-fill-mode: none;
 }
 
-@media (max-width: 320px) {
-  .name {
-    font-size: 2em;
-  }
-  .bio-text {
-    font-size: 10vw;
-    line-height: 60px;
-  }
-  .profile-img {
-    margin-left: -15px;
-  }
-  .mr-auto {
-    margin-left: -15px !important;
-  }
-}
-
-@media (min-width: 414px) {
-  .connect-text {
-    margin-top: 250px;
-  }
-  .profile-img {
-    margin-left: 15px;
-  }
-  .mr-auto {
-    margin-left: 20px !important;
-  }
-  .bio {
-    font-size: 1.1rem;
-  }
-  .about {
-    left: 90px;
-  }
-}
 
 @media (min-width: 600px) {
   .name {
@@ -332,15 +304,11 @@ p {
   .about {
     font-size: 2.2em;
   }
-  .bio {
-    font-size: 1.4em;
-  }
+ 
   .intro {
     font-size: 17px;
   }
-  .profile-img {
-    margin-left: 50px;
-  }
+
   .social-icon {
     font-size: 6vw;
   }
@@ -370,46 +338,25 @@ p {
   }
 }
 
- @media screen and (min-width: 768px) {
-  .bio {
-    font-size: 1em;
-    left: -150px;
-    font-size: 1.2em;
+@media screen and (min-width: 450px) {
+  .col {
+    margin-left: 45px;
   }
-  .about {
-    
-    font-size: 2em;
-  }
-  .profile-img {
-    top: -110%;
-    left: 380px;
-    width: 225px;
-    height: 225px;
-  }
-} 
-
-@media (min-width: 824px) {
   .bio {
     font-size: 1.2em;
-    left: 20px;
-  }
-  .about {
-    left: 70px;
-    font-size: 2em;
-  }
-  .profile-img {
-    top: -110%;
-    left: 380px;
-    width: 225px;
-    height: 225px;
   }
 }
 
-@media (min-width: 933px) {
-  .bio-text {
-    font-size: 4vw;
+@media screen and (min-width: 768px) {
+  .profile-img {
+      position: absolute;
+      top: 35%;
+      left: -55px;
+      width: 220px;
+      height: 220px;
   }
 }
+
 @media (min-width: 992px) {
   .name {
     font-size: 6vw;
@@ -433,14 +380,9 @@ p {
   .bio {
     left: 10%;
   }
-  /* .about {
-    left: 30px;
-  } */
+
   .profile-img {
-    width: 225px;
-    height: 225px;
-    top: -120%;
-    margin-left: 150px;
+    left: 20%;
   }
 }
 
@@ -450,7 +392,7 @@ p {
   }
   .connect-description {
     width: 580px;
-    font-size: 14px;
+    font-size: 1.2em;
     text-align: center;
   }
   .contact-btn {
@@ -485,15 +427,6 @@ p {
     width: 580px;
     font-size: 18px;
     text-align: center;
-  }
-  .bio {
-    left: 100px;
-  }
-  .profile-img {
-    left: 45%;
-    top: -100%;
-    width: 300px;
-    height: 300px;
   }
 }
 
